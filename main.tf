@@ -56,6 +56,7 @@ resource "google_compute_disk" "my_disk" {
 resource "google_compute_attached_disk" "disk_attachment" {
   instance = google_compute_instance.enhanced_vm.name
   disk     = google_compute_disk.my_disk.name
+  zone     = var.zone
 }
 
 resource "google_compute_firewall" "default" {
