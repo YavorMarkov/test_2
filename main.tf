@@ -42,7 +42,7 @@ resource "google_compute_instance" "enhanced_vm" {
   }
 
   metadata = {
-    startup-script-url = "https://raw.githubusercontent.com/YavorMarkov/test-2/main/startup.sh"
+    startup-script-url = "https://raw.githubusercontent.com/YavorMarkov/test_2/main/script.sh"
   }
 }
 
